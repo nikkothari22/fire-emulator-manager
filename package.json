@@ -1,5 +1,5 @@
 {
-  "name": "firebase",
+  "name": "firebase-emulator-manager",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

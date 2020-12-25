@@ -1,0 +1,58 @@
+# dependencies
+node_modules/
+jspm_packages/
+.pnp/
+.pnp.js
+
+# testing
+coverage
+lib-cov
+*.lcov
+.nyc_output
+
+# production
+build/
+
+# distribution
+dist/
+
+# runtime
+pids
+*.pids*.seed
+*.pid.lock
+
+# firebase
+.firebase/
+.idea
+.runtimeconfig.json
+
+# node
+.node_repl_history
+.lock-wscript
+
+# diagnostics
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# eslint
+.eslintcache
+
+# misc
+.DS_Store
+**/*.backup.*
+**/*.back.*
+.yarn-integrity
+
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# visual studio
+.vs/
+
+# visual studio code
+.vscode/
+.history

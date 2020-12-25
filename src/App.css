@@ -2,3 +2,113 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+:root{
+  --grey: #ECEFF1;
+  --navy: #2C384A;
+  --blue: #039BE5;
+  --coral: #FF8A65;
+  --yellow: #FFCA28;
+  --amber: #FFA000;
+  --orange: #F57C00;
+  --standard-transition: all 0.3s ease-out;
+}
+body{
+  font-size: 16px;
+  background-color: var(--grey);
+}
+
+.amber{
+  color: var(--amber);
+}
+.orange{
+  color: var(--orange);
+}
+
+/*------ Header ------*/
+.header{
+  position: fixed;
+  top:0;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:15px 10%;
+  width:100%;
+  background-color: white;
+}
+.header-title{
+  font-size: 150%;
+  font-weight: 700;
+  color: var(--navy)
+}
+.header-title .version{
+  font-weight: 300;
+}
+.header-icons{
+  display: flex;
+}
+.header-icons > a{
+  align-items: center;
+  display: flex;
+  font-size: 110%;
+  transition: var(--standard-transition);
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--navy);
+}
+.header-icons > a:hover{
+  color: var(--blue);
+}
+.header-icons > a > img{
+  width:30px;
+  margin-right:10px;
+}
+
+/*----- Footer -----*/
+
+.footer{
+  width:100%;
+  border-top:1px solid #dadce0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  color: var(--navy);
+  padding:20px 10%;
+  flex-direction: column;
+}
+.footer p{
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.footer p a{
+  color: var(--blue);
+}
+.footer-text{
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 300;
+  
+}
+.footer-social-links{
+  display: flex;
+  width:60%;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.footer-social-links li a{
+  display: flex;
+  color: var(--navy);
+  transition: var(--standard-transition);
+  text-decoration: none;
+  align-items: center;
+}
+.footer-social-links li a:hover{
+  color: var(--blue);
+}
+.footer-social-links li a .icon{
+  margin-right: 10px;
+}
+.content-page{
+  min-height: 80vh;
+}
